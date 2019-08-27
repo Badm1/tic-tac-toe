@@ -1,0 +1,19 @@
+.main{
+    width:450px;
+    height: 420px;
+    border: 4px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 35%;
+    margin-top:15%;
+}
+.cell{ 
+    width: 148px;
+    height: 138px;
+    border:1px solid black;
+}
+.clear{
+    margin-left: 55%;
+    margin-top: 20px;
+    
+}
