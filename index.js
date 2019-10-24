@@ -14,7 +14,7 @@ function background(id, first, second) {
 
 
     if (style.background == '') count++;
-    if (count == 9 && wincheck == 0) alert('draw');
+    
 
     if (style.background == '') {
         if (turn == 0) {
@@ -30,7 +30,7 @@ function background(id, first, second) {
     style.backgroundSize = '150px 140px';
 
 
-
+    if (count == 9 && wincheck == 0) alert('draw');
 
 
 
@@ -41,56 +41,56 @@ function background(id, first, second) {
 
 
         if (matr[i][0] == 1 && matr[i][1] == 1 && matr[i][2] == 1) {
-            alert('X wins the round');
+            alert('X win this round');
             wincheck++;
         }
         if (matr[i][0] == 2 && matr[i][1] == 2 && matr[i][2] == 2) {
-            alert('O wins the round');
+            alert('O win this round');
             wincheck++;
         }
 
 
         if (matr[0][i] == 1 && matr[1][i] == 1 && matr[2][i] == 1) {
-            alert('X wins the round');
+            alert('X win this round');
             wincheck++;
         }
         if (matr[0][i] == 2 && matr[1][i] == 2 && matr[2][i] == 2) {
-            alert('O wins the round');
+            alert('O win this round');
             wincheck++;
         }
 
 
         if (matr[0][0] == 1 && matr[1][1] == 1 && matr[2][2] == 1) {
-            alert('X wins the round');
+            alert('X win this round');
             wincheck++;
             break;
         }
         if (matr[0][0] == 2 && matr[1][1] == 2 && matr[2][2] == 2) {
-            alert('O wins the round');
+            alert('O win this round');
             wincheck++;
             break;
         }
 
 
         if (matr[0][0] == 1 && matr[1][1] == 1 && matr[2][2] == 1) {
-            alert('X wins the round');
+            alert('X win this round');
             wincheck++;
             break;
         }
         if (matr[0][0] == 2 && matr[1][1] == 2 && matr[2][2] == 2) {
-            alert('O wins the round');
+            alert('O win this round');
             wincheck++;
             break;
         }
 
 
         if (matr[2][0] == 1 && matr[1][1] == 1 && matr[0][2] == 1) {
-            alert('X wins the round');
+            alert('X win this round');
             wincheck++;
             break;
         }
         if (matr[2][0] == 2 && matr[1][1] == 2 && matr[0][2] == 2) {
-            alert('O wins the round');
+            alert('O win this round');
             wincheck++;
             break;
         }
@@ -105,7 +105,7 @@ function Clear() {
         style.background = '';
     }
     turn = 0;
-    counter = 0;
+    count = 0;
     wincheck = 0;
     matr = [
         [0, 0, 0],
